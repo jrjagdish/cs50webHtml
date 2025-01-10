@@ -1,75 +1,56 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>HOME Page</title>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <style>
-      form {
-        padding-top: 250px;
-        text-align: center;
-      }
-      input {
-        width: 400px;
-        padding: 10px;
-        border: 1px solid black;
-        border-radius: 50px;
-      }
-      button {
-        padding: 10px;
-        background-color: lightgreen;
-        border: 1px solid black;
-        border-radius: 50px;
-        width: 100px;
-      }
-      button:hover {
-        background-color: aqua;
-      }
-      img {
-        border: 1px solid black;
-        border-radius: 30px;
-        height: 60px;
-        width: 60px;
-        margin-left: 530px;
-        margin-bottom: -220px;
-      }
-      div > img {
-        display: inline;
-        margin: auto;
-        margin-top: 50px;
-        margin-left: 50px;
-        align-self: center;
-        height: 40px;
-        width: 40px;
-        text-align: center;
-      }
-      div {
-        text-align: center;
-      }
-      body {
-        flex-wrap: wrap;
-      }
-    </style>
+    <title>New Tab</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon? family=Material+Icons"
+    />
   </head>
   <body>
-    <img src="services.png" alt="services" />
-    <form action="https://www.google.com/search">
-      <input type="text" name="q" />
+    <div style="color: whitesmoke; text-align: right; font-size: smaller">
+      All Bookmarks
+    </div>
+    <hr />
 
-      <button>search</button>
+    <p id="p">Google</p>
+    <form action="https://www.google.com/search">
+      <input type="text" name="q" placeholder="Search Google or Type a URL" />
     </form>
-    <a href="image.html">
+    <div id="container">
       <div>
-        <img src="services.png" alt="services" />
-        <img src="setup.png" alt="setup" />
-        <img src="sell.png" alt="sell" />
-        <img src="services.png" alt="services" />
-        <img src="setup.png" alt="setup" />
-        <img src="sell.png" alt="sell" />
-        <img src="services.png" alt="services" />
-        <img src="setup.png" alt="setup" />
-        <img src="sell.png" alt="sell" />
+        <img src="youtube.png" alt="" />
+        <p>YouTube</p>
       </div>
-    </a>
+      <div>
+        <img src="whatsapp.jpg" alt="" />
+        <p>Whatsapp</p>
+      </div>
+      <div>
+        <img src="git.png" alt="" />
+        <p>Git</p>
+      </div>
+      <div>
+        <img src="gpt.png" alt="" />
+        <p>ChatGpt</p>
+      </div>
+      <div>
+        <img src="drawsql.jpg" alt="" />
+        <p>Drawsql</p>
+      </div>
+      <div>
+        <img src="api.png" alt="" />
+        <p>FastAPI</p>
+      </div>
+      <div>
+        <img src="forest.jpg" alt="" />
+        <p>Forest</p>
+      </div>
+      <div>
+        <img src="search.png" alt="" />
+        <p>Search</p>
+      </div>
+    </div>
   </body>
 </html>

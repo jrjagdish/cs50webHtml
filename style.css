@@ -1,0 +1,81 @@
+
+      body {
+        background-color: rgb(51, 60, 77);
+      }
+      #p {
+        text-align: center;
+        font-family: "Segoe UI", Tahoma, sans-serif;
+        font-size: 90px;
+        font-weight: 500;
+        color: rgba(170, 199, 255, 1);
+        margin-top: 130px;
+        margin-bottom: 50px;
+       
+      }
+
+      
+      form {
+        text-align: center;
+      }
+      input {
+        padding: 15px;
+        border: 1px solid whitesmoke;
+        border-radius: 30px;
+        margin-top: -300px;
+        @media(min-width:800px)
+        {
+          width:710px;
+        }
+        @media(max-width: 672px)
+        {
+          width: 561px;
+        }
+        @media(max-width: 560px)
+        {
+          width: 449px;
+        }
+        
+      }
+      #container{
+        display: grid;
+        @media(min-width: 1000px)
+        {
+        grid-template-columns: auto auto auto auto auto auto auto auto;}
+        @media(max-width:900px ){
+          grid-template-columns: auto auto auto auto;
+         
+        }
+        @media(max-width:500px){
+          grid-template-columns: auto auto auto;
+        }
+        
+        size: 40px 40px;
+        grid-column-gap: 70px;
+        grid-area: auto;
+        align-content: center;
+        justify-content: center;
+        
+        
+      }
+      img{
+        text-align: center;
+        margin-top: 40px;
+        border: 1px solid rgb(66, 71, 81);
+        border-radius: 100px;
+        padding: 10px;
+        background-color: rgb(66, 71, 81);
+        width: 30px;
+        height: 30px;
+      }
+      p{
+        text-align: center;
+        color: whitesmoke;
+        font-family: 'Segoe UI', Tahoma, sans-serif;
+
+      }
+      hr{
+        border: 1px solid rgb(66, 71, 81);
+        margin-top: 5px;
+      }
+
+    

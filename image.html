@@ -1,74 +1,119 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <title>Image</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Image</title>
+   
     <style>
-      #flex {
-        display: flex;
-        flex-wrap: wrap;
-        margin-left: 50px;
-      }
-      img {
-        width: 150px;
-        height: 150px;
-        margin: 20px;
-        border: 1px solid black;
-        align-items: center;
-      }
       body {
-        margin: 0px;
-        padding: 0px;
+        background-color: #1f1f1f;
       }
-      button {
-        background-color: aqua;
-        width: 60px;
-        height: 40px;
-        margin-left: 50px;
-        border: 1px solid black;
-        border-radius: 50px;
-        padding: 10px;
+      #photo {
         margin-top: 50px;
+        display: grid;
+        @media (min-width: 1000px) {
+          grid-template-columns: auto auto auto auto auto;
+        }
+        @media (max-width: 900px) {
+          grid-template-columns: auto auto auto auto;
+        }
+        @media (max-width: 500px) {
+          grid-template-columns: auto auto auto;
+        }
+        grid-area: auto;
+        justify-items: center;
+        align-items: center;
+        grid-column-gap: 20px;
+        grid-row-gap: 20px;
+
+        width: 100%;
+        height: 100%;
       }
-      button:hover {
-        background-color: lightgreen;
+      #img {
+        width: 200px;
+        height: 150px;
+        border: 1px solid #1f1f1f;
+        border-radius: 10px;
+        box-shadow: 20px;
       }
-      form {
-        display: inline;
+      .div {
+        border: 1px solid #1f1f1f;
+      }
+      p {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        color: whitesmoke;
+        font-size: small;
       }
     </style>
   </head>
   <body>
-    <div style="background-color: aqua; padding: 20px">WELCOME TO IMAGES!</div>
-    <div id="flex">
-      <img src="land.png" alt="land" />
-
-      <img src="forest.jpg" alt="forest" />
-
-      <img src="eye-2771174_1920.jpg" alt="eye-2771174_1920" />
-
-      <img src="payment.png" alt="payment" />
-
-      <img src="reach.jpeg" alt="reach" />
-
-      <img src="salon.jpg" alt="salon" />
-
-      <img src="sell.png" alt="sell" />
-
-      <img src="services.png" alt="services" />
-
-      <img src="setup.png" alt="setup" />
-      <img src="sell.png" alt="sell" />
-      <img src="services.png" alt="services" />
-
-      <img src="setup.png" alt="setup" />
+    <hr style="border: 1px solid rgb(66, 71, 81); margin-top: 50px" />
+    <div id="photo">
+      <div class="div">
+        <img
+          src="api.png"
+          alt=""
+          id="img"
+        />
+        <p>http://127.0.0.1:8000/FASTAPI...</p>
+      </div>
+      <div class="div">
+        <img src="drawsql.jpg" alt="" id="img"/>
+        <p>http://127.0.0.1:8000/DrawSQL...</p>
+      </div>
+      <div class="eye">
+        <img src="eye-2771174_1920.jpg" alt="" id="img" />
+        <p>http://127.0.0.1:8000/EYE...</p>
+      </div>
+      <div class="div">
+        <img src="forest.jpg" alt="" id="img"/>
+        <p>http://127.0.0.1:8000/Forest...</p>
+      </div>
+      <div class="div">
+        <img src="git.png" alt="" id="img"/>
+        <p>http://127.0.0.1:8000/docsGit...</p>
+      </div>
+      <div class="div">
+        <img src="gpt.png" alt="" id="img"/>
+        <p>http://127.0.0.1:8000/ChatGPT...</p>
+      </div>
+      <div class="div">
+        <img src="search.png" alt="" id="img"/>
+        <p>http://127.0.0.1:8000/Logo...</p>
+      </div>
+      <div class="div">
+        <img src="services.png" alt="" id="img"/>
+        <p>http://127.0.0.1/services...</p>
+      </div>
+      <div class="div">
+        <img src="whatsapp.jpg" alt="" id="img"/>
+        <p>http://1278000/docswhatsapp...</p>
+      </div>
+      <div class="div">
+        <img src="youtube.png" alt="" id="img"/>
+        <p>http://.0.1:8000/docsYouTube...</p>
+      </div>
+      <div class="div">
+        <img src="bird.jpg" alt="" id="img"/>
+        <p>https://microsoft.com/images/create..</p>
+      </div>
+      <div class="div">
+        <img src="tree.jpg" alt="" id="img"/>
+        <p>https://pixabay.com/...</p>
+      </div>
+      <div class="div">
+        <img src="fall.jpg" alt="" id="img"/>
+        <p>night fall/.com/...</p>
+      </div>
+      <div class="div">
+        <img src="nature.jpg" alt="" id="img"/>
+        <p>AI nature design...</p>
+      </div>
+      <div>
+        <img src="download.jpg" alt="" id="img" />
+        <p>https://www.google.com/...</p>
+      </div>
     </div>
-    <form action="index.html">
-      <button>Back</button>
-    </form>
-    <form action="advance.html" style="margin-left: 980px; flex-wrap: wrap">
-      <button>Next</button>
-    </form>
   </body>
 </html>
