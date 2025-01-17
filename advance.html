@@ -2,109 +2,123 @@
 <html>
   <head>
     <title>Google Advance Search</title>
-    <link rel="icon" href="D:\Design\cs50web" type="png" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+
     <style>
-        body{
-            background-color: #202124;
-            margin: 0px;
-            padding: 0px;
-            font-family: Arial, sans-serif;
-        }
-        form{
-            margin: 50px;
-            margin-top: 20px;
-            color: rgb(92, 97, 108);
-            display: grid;
-            grid-template-columns: 200px auto;
-            grid-column-gap: 15px;
-            align-items: center;
-            
-        }
-        input{
-            color: #fff;
-            background-color: #202124;
-            border: 1px solid rgb(81, 87, 100);
-          
-            width: 550px;
-            height: 20px;
-            padding: 6px;
-            margin: 6px;
-        }
-        label{
-            
-            padding-top: 4px ;
-            font-size: small;
-            
-        }
-        .grid{
-            display: grid;
-            grid-template-columns: 200px auto auto auto;
-            grid-column-gap: 5px;
-            align-items: center;
-            margin-top: -40pxpx;
-            margin-bottom: 80px;
-          
-          
-        }
-        hr{
-          margin-top: 30px;
-          border: 1px solid black;
-        }
-        button{
-          
-          text-align: center;
-         
-          margin-left: 445px;
-       
-          
-          padding: 5px;
-          background-color: rgb(74, 102, 169);
-          border: 1px solid rgb(74, 102, 169);
-          border-radius: 3px;
-          width: 125px;
-          margin-top: 20px;
-          
-        }
-        #page{
-          
-          margin-top: 10px;
-          justify-items: center;
-        }
+      body {
+        background-color: #202124;
+        margin: 0px;
+        padding: 0px;
+        font-family: Arial, sans-serif;
+      }
+      form {
+        margin: 50px;
+        margin-top: 20px;
+        color: rgb(92, 97, 108);
+        display: grid;
+        grid-template-columns: 200px auto;
+        grid-column-gap: 15px;
+        align-items: center;
+      }
+      input {
+        color: #fff;
+        background-color: #202124;
+        border: 1px solid rgb(81, 87, 100);
+
+        width: 550px;
+        height: 20px;
+        padding: 15px;
+        margin: 6px;
+      }
+      label {
+        padding-top: 4px;
+        font-size: small;
+        margin-top: 10px;
+      }
+      .grid {
+        display: grid;
+        grid-template-columns: 200px auto auto auto;
+        grid-column-gap: 5px;
+        align-items: center;
+
+        margin-bottom: 80px;
+      }
+      hr {
+        margin-top: 30px;
+        border: 1px solid black;
+      }
+      .click {
+        text-align: center;
+
+        margin-left: 440px;
+
+        padding: 5px;
+        background-color: rgb(74, 102, 169);
+        border: 1px solid rgb(74, 102, 169);
+        border-radius: 3px;
+        width: 120px;
+        margin-top: 20px;
+        font-size: small;
+      }
+      #page {
+        float: right;
+        margin: 10px;
+      }
     </style>
   </head>
   <body>
-    <p style="color: white;font-size: 22px;margin-left: 24px;">Google</p>
-    <p style="color: #f28b82;font-size: 20px;margin-left: 48px;margin-top: 46px;">Advanced Search</p>
-    <hr>
-    <p style="color: #fff;margin-left: 50px;margin-top: 48px;">Find pages with...</p>
-    <form action="https://www.google.com/advanced_search">
-      <label for="">all these words:</label>
-      <input type="text">
-      <label for="">this exact word or phrase:</label>
-      <input type="text">
-      <label for="">any of these words:</label>
-      <input type="text">
-      <label for="">none of these words:</label>
-      <input type="text">
-      <div class="grid">
-      <label for="" >numbers ranging from:</label>
-      <input type="text" style="width: 251px;margin-left: 15px;"> <p style="color: #fff;">to</p> <input type="text" style="width: 250px;">
-      
-    </div>
-    <button>Advance Search</button>
-    </form>
     <nav id="page">
       <ul class="pagination pagination-sm">
         <li class="page-item"><a class="page-link" href="index.html">1</a></li>
-        
-        
-        
-        <li class="page-item"><a class="page-link" href="image.html">2</a></li>
+
+        <li class="page-item">
+          <a class="page-link" href="advance.html">2</a>
+        </li>
         <li class="page-item active" aria-current="page">
           <span class="page-link">3</span>
         </li>
       </ul>
     </nav>
+    <p
+      style="color: white; font-size: 22px; margin-left: 24px; margin-top: 10px"
+    >
+      Google
+    </p>
+    <p
+      style="
+        color: #f28b82;
+        font-size: 20px;
+        margin-left: 48px;
+        margin-top: 46px;
+      "
+    >
+      Advanced Search
+    </p>
+    <hr />
+    <p style="color: #fff; margin-left: 50px; margin-top: 48px">
+      Find pages with...
+    </p>
+    <form action="https://www.google.com/advanced_search">
+      <label for="">all these words:</label>
+      <input type="text" />
+      <label for="">this exact word or phrase:</label>
+      <input type="text" />
+      <label for="">any of these words:</label>
+      <input type="text" />
+      <label for="">none of these words:</label>
+      <input type="text" />
+      <div class="grid">
+        <label for="">numbers ranging from:</label>
+        <input type="text" style="width: 251px; margin-left: 15px" />
+        <p style="color: #fff; text-align: center">to</p>
+        <input type="text" style="width: 264px" />
+      </div>
+      <button class="click">Advance Search</button>
+    </form>
   </body>
 </html>
